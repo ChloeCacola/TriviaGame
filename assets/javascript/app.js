@@ -53,38 +53,38 @@ function timer() {
 function timeUp() {
 	console.log("change page/reveal answers");
 
-	//Searching answers for correct/incorrect/unanswered values
-	//counting the values of each for total scores
+	//Searching answers for correct/incorrect values and adding to total
 	for (i=0; i<answers.length; i++) {
 	if (answers[i] == "correct") {
 	correct++
-} else if (answers[i] == "incorrect") {
+	} else if (answers[i] == "incorrect") {
 	incorrect++
-} else {};
+	} else {};
+	};
 
+	//counting unanswered questions
 	if (answers.length < numQues) {
 		unanswered = numQues - (incorrect + correct)
 	} else {
 		unanswered = numQues
+	};
+
+	//hide questions/answers
+	$("#game").css('display', 'none');
+
+
+	//printing results on page
+	$("#results").css('display', 'initial');
+
+
+	$("#correct").html("Correct: " + correct);
+	$("#incorrect").html("Incorrect: " + incorrect);
+	$("#unanswered").html("Unanswered: " + unanswered);
+	console.log(correct);
+	console.log(incorrect);
+	console.log(unanswered);
+	console.log(answers);
 	}
-};
-
-//hide questions/answers
-$("#game").css('display', 'none');
-
-
-//printing results on page
-$("#results").css('display', 'initial');
-
-
-$("#correct").html("Correct: " + correct);
-$("#incorrect").html("Incorrect: " + incorrect);
-$("#unanswered").html("Unanswered: " + unanswered);
-console.log(correct);
-console.log(incorrect);
-console.log(unanswered);
-console.log(answers);
-}
 
 
 
