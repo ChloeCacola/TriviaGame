@@ -1,6 +1,6 @@
-var count = 15;
+var count = 60;
 var counter = setInterval(timer, 1000);
-var timeUp = setTimeout(timeUp, 1000 * 15); //60 seconds
+var timeUp = setTimeout(timeUp, 1000 * 60); //60 seconds
 var correct = 0
 var incorrect = 0
 var unanswered = 0
