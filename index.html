@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bird Trivia</title>
+	<title>Fowl Trivia</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 </head>
 <body>
-<h1>Trivia</h1>
+<h1>Fowl Trivia</h1>
 
-<h2>Time Remaining: &nbsp;<div id=currentTimeLeft>60 seconds</div> </h2>
+<container id = "game">
+
+<h2 id = "timeTitle">Time Remaining</h2><h3 id = "time">60 seconds</h3>
 
 <h3>What is the pigmentation of indian blue peacock tail feathers?</h3>
-<form id = "Q1" action="">
+<form id = "Q1" class = "Question" action="">
   <input type="radio" name="A1" value="correct"> Brown<br>
   <input type="radio" name="A1" value="incorrect"> Many colors<br>
   <input type="radio" name="A1" value="incorrect"> Green and blue
@@ -17,7 +21,7 @@
 <!-- Due to structural colouration, indian blue peacock tail feathers are pigmented brown, but their microscopic structure reflects various colors of light and create iridescent hues. -->
 
 <h3>What is the average number of taste buds that a chicken has?</h3>
-<form id = "Q2" action="">
+<form id = "Q2" class = "Question" action="">
   <input type="radio" name="A2" value="correct">240-360<br>
   <input type="radio" name="A2" value="incorrect">450-670<br>
   <input type="radio" name="A2" value="incorrect"> 40-100
@@ -26,7 +30,7 @@
 
 
 <h3>What is a male duck called?</h3>
-<form id = "Q3" action="">
+<form id = "Q3" class="Question" action="">
   <input type="radio" name="A3" value="incorrect"> Gander<br>
   <input type="radio" name="A3" value="correct"> Drake<br>
   <input type="radio" name="A3" value="incorrect"> Rooster
@@ -35,7 +39,7 @@
 <!-- Male ducks are called drakes, whereas female ducks are referred to as hens and young ducks, ducklings.  When in groups, ducks may be called a flock (most often when in flight), brace, raft, team or paddling.   -->
 
 <h3>Which of the following is a type of fowl (Galloanserae)?</h3>
-<form id = "Q4" action="">
+<form id = "Q4" class="Question" action="">
   <input type="radio" name="A4" value="incorrect"> Emperor Penguin<br>
   <input type="radio" name="A4" value="incorrect"> Kiwi<br>
   <input type="radio" name="A4" value="correct"> Sage Grouse
@@ -44,18 +48,29 @@
 
 
 <h3>TRUE or FALSE?:  Chickens are omnivorous. </h3>
-<form id = "Q5" action="">
+<form id = "Q5" class="Question" action="">
   <input type="radio" name="A5" value="correct">TRUE<br>
   <input type="radio" name="A5" value="incorrect">FALSE<br>
 </form>
 
 
 <h3>What is one method guinea fowl use to prevent external parasites?</h3>
-<form id = "Q6" action="">
+<form id = "Q6" class="Question" action="">
   <input type="radio" name="A6" value="correct"> Dust bathing<br>
   <input type="radio" name="A6" value="incorrect"> Standing in the rain<br>
   <input type="radio" name="A6" value="incorrect"> They do not use any special methods to prevent external parasites.
 </form>
+</container>
+
+<!-- RESULTS -->
+
+<container id = "results">
+<h2>Results</h2>
+<div id = "correct"></div><br>
+<div id = "incorrect"></div><br>
+<div id = "unanswered"></div><br>
+</container>
+
 
 
 </body>
