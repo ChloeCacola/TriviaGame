@@ -3,7 +3,7 @@ var counter = setInterval(timer, 1000);
 var timeUp = setTimeout(timeUp, 1000 * 10); //60 seconds
 var correct = 0
 var incorrect = 0
-var unanswered
+var unanswered = 6
 var answers = []
 var numQues = 6 //change this if/when more/less questions added
 
@@ -61,7 +61,7 @@ function timeUp() {
 
 	if (answers.length < numQues) {
 		unanswered = numQues - (incorrect + correct)
-	}
+	} 
 };
 
 //hidden forms
