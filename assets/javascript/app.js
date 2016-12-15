@@ -1,6 +1,6 @@
-var count = 10;
+var count = 15;
 var counter = setInterval(timer, 1000);
-var timeUp = setTimeout(timeUp, 1000 * 10); //60 seconds
+var timeUp = setTimeout(timeUp, 1000 * 15); //60 seconds
 var correct = 0
 var incorrect = 0
 var unanswered = 0
@@ -46,8 +46,9 @@ function timer() {
 		return;
 	}
 	// document.getElementById("currentTimeLeft").innerHTML=count + " seconds";
-	$("#time").html(count + " seconds");
+	$("#time").html(count);
 }
+
 
 //Time is up:  results are revealed on a new page.
 function timeUp() {
@@ -65,6 +66,8 @@ function timeUp() {
 	//counting unanswered questions
 	if (answers.length < numQues) {
 		unanswered = numQues - (incorrect + correct)
+	} else if (answers.length = numQues) {
+		unanswered = 0
 	} else {
 		unanswered = numQues
 	};

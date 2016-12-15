@@ -1,3 +1,63 @@
 body {
 	text-align: center;
 }
+
+h1 {
+	margin: auto;
+	padding: 30px;
+	padding-top: 140px;
+	width: 200px;
+	height: 200px;
+	color: white;
+}
+
+#h1bg {
+	margin: auto;
+	background: url(../images/duck.svg);
+    background-size: 260px 260px;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 260px;
+}
+
+#center {
+	margin: auto;
+	width: 50%;
+}
+#gamestyle {
+	width: 600px;
+    border: 3px solid #000;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#timeTitle {
+	line-height: 0;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#countdown {
+	width: 200px;
+	float: left;
+	margin-left: 10%;
+	margin-top: 15%;
+	font-size: 15px;
+
+}
+
+#countdownbg {
+	float: left;
+	background: url(../images/rooster.jpg);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+
+#time {
+	font-size: 30px;
+	padding-top: 60px;
+	margin-left: 20px;
+	color: white;
+}
